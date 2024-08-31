@@ -1,0 +1,419 @@
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+
+}
+
+.Header {
+    position: fixed;
+    width: 100%;
+    background-color: hsl(228, 15%, 15%);
+}
+
+.NavLogoMenu {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.NavName {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.NavName span {
+    color: rgb(55, 163, 96);
+}
+
+.navContainer {
+    position: relative;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavLogo {
+    display: flex;
+    text-align: center;
+    padding-left: 15px;
+    font-size: 25px;
+    font-weight: 900;
+    width: 30px;
+    height: 40px;
+    background-color: rgb(55, 163, 96);
+    color: white;
+    /* border-radius: 50%; */
+}
+
+.openCloseIcons {
+    color: hsl(247, 8%, 21%);
+    background-color: white;
+    margin-right: 30px;
+
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.NavLink {
+    color: rgb(250, 250, 250);
+    font-weight: 600;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.NavLink:hover {
+    color: rgb(55, 163, 96);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.mobileNavbar {
+    width: 300px;
+    height: 100vh;
+    background-color: hsl(228, 15%, 15%);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    z-index: 9;
+}
+
+.openCloseIcons {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .NavLink {
+        display: none;
+    }
+
+    .openCloseIcons {
+        display: block;
+    }
+
+    .mobileLinks {
+        text-decoration: none;
+        color: white;
+        padding: 0 10px;
+        margin: 20px 0;
+    }
+}
+
+/*---
+--------------------------SECTION--------------------------------------*/
+.Section {
+    display: flex;
+    padding: 120px 200px 100px 200px;
+    color: white;
+    background-color: hsl(228, 15%, 20%);
+}
+
+.SectionPic {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 10px 10px 0px hsl(227, 12%, 32%);
+
+}
+
+.SectionSocial {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.SocialSigns {
+    margin-right: 10px;
+    color: white;
+    padding: 5px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: rgb(55, 163, 96);
+}
+
+.SocialSigns:hover {
+    transform: translateY(-.25rem);
+}
+
+.SectionDescription {
+    color: hsl(228, 8%, 95%);
+    font-weight: 500;
+    width: 400px;
+    font-size: larger;
+    margin-right: 80px;
+}
+
+.SectionDescription h1,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Section button {
+    width: 130px;
+    height: 50px;
+    background-color: rgb(55, 163, 96);
+    color: hsl(228, 15%, 20%);
+    border: 2px solid hsl(228, 15%, 20%);
+    font-weight: 700;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.Section button:hover {
+    box-shadow: 0px 7px 7px 0px hsl(227, 12%, 32%);
+}
+
+.SectionDescription span {
+    color: rgb(55, 163, 96);
+}
+
+@media screen and (max-width: 550px) {
+    .Section {
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+        padding: 100px 0px 20px 15px;
+        margin: auto;
+    }
+
+}
+
+/*--------------ABOUT----------------------------*/
+.AboutSection {
+    background-color: hsl(228, 15%, 15%);
+    color: white;
+    height: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.AboutSection h1,
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.AboutSection span {
+    color: rgb(55, 163, 96);
+}
+
+.AboutSection button {
+    width: 120px;
+    height: 50px;
+    background-color: rgb(55, 163, 96);
+    color: white;
+    border: 2px solid hsl(228, 15%, 15%);
+    font-weight: 700;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.AboutSection button:hover {
+    box-shadow: 0px 7px 7px 0px hsl(227, 12%, 32%);
+}
+
+/*------SKILLS------------------------------------------*/
+.SkillSection {
+    background-color: hsl(228, 15%, 20%);
+    height: auto;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.SkillSection span {
+    color: rgb(55, 163, 96);
+}
+
+.SkillSection h2 {
+    color: white;
+}
+
+.SkillSection h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.SkillSection p {
+    width: 700px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.SkillsIcons {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.LanguageIcons {
+    margin-right: 20px;
+    color: white;
+    padding: 5px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: rgb(55, 163, 96);
+}
+
+.LanguageIcons:hover {
+    transform: translateY(-.25rem);
+}
+
+/*------------------PROJECTS-------------------------------------*/
+.ProjectSection {
+    height: auto;
+    background-color: hsl(228, 15%, 15%);
+    margin: 0;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.ProjectSection span {
+    color: rgb(55, 163, 96);
+}
+
+.ProjectPictureSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 80px 20px 130px;
+
+}
+
+.ProjectPicture {
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+
+}
+
+.ProjectPicture:hover {
+    transform: translateY(-.15rem);
+    box-shadow: 0px 7px 7px 0px hsl(227, 12%, 32%);
+}
+
+/*-------------CONTACT ME--------------------*/
+.ContactSection {
+    height: auto;
+    background-color: hsl(228, 15%, 20%);
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.ContactSection span {
+    color: rgb(55, 163, 96);
+}
+
+.ContactSection h1,
+h3 {
+    margin: 0
+}
+
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin:20px 15% 20px 15%;
+}
+.Input{
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    background-color: hsl(228, 15%, 15%);
+   border:hsl(228, 15%, 15%) ;
+   border-radius: 7px;
+}
+.TextArea{
+    margin-bottom: 10px;
+    height: 70px;
+    padding: 10px;
+    color: white;
+    background-color: hsl(228, 15%, 15%);
+   border:hsl(228, 15%, 15%) ;
+   border-radius: 7px;
+}
+.InputButton{
+    padding: 10px;
+    color: white;
+    background-color: rgb(55, 163, 96);
+   border:rgb(55, 163, 96) ;
+   border-radius: 7px;
+}
+/*-------------FOOTER-----------------*/
+.FooterSection{
+    background-color:hsl(228, 15%, 15%) ;
+    height: auto;
+    padding-top:50px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.FooterSection span{
+    color:rgb(55, 163, 96) ;
+    font-size: xx-large;
+    margin: 0;
+
+}
+.FooterSection h1{
+    margin:0
+}
+.FooterSocial{
+    margin:30px 0px ;
+}
+.FooterSigns{
+    margin-right: 10px;
+    color: white;
+  text-align: center;
+    padding: 5px;
+    clip-path: circle(50%);
+    background-color: rgb(55, 163, 96);
+}
+.FooterSection a{
+    color: white;
+    margin: 0px;
+    text-decoration: none;
+    font-size: medium;
+}
+.FooterSection p{
+    margin: 0px;
+    font-size: medium;
+}
+.ScrollUpButton{
+  border: 2px solid rgb(55, 163, 96);
+   border-radius: 150px;
+    width: 50px;
+    background-color:rgb(55, 163, 96);
+margin-left: 95%;
+}
+
+/*-------------SCROLL BAR-----------------------------*/
+::-webkit-scrollbar{
+    width: .8rem;
+    border-radius: .5rem;
+    background-color: hsl(228,12%,25%);
+}
+::-webkit-scrollbar-thumb{
+    background-color: hsl(228,8%,35%);
+    border-radius: .7rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(228,8%,45%);
+}
